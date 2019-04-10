@@ -1,4 +1,26 @@
 ---
 label: Blog Posts
 hide_body: false
-fields: []
+display_field: header
+fields:
+- type: text
+  default: '1'
+- type: text
+  name: header
+  label: Header
+  description: This is header
+  default: Ini Test
+  hidden: true
+  config:
+    required: true
+- type: textarea
+  name: post
+  label: Post
+  description: This is text area for posts
+  hidden: true
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  default: "<p>Apakah ini yang si masujajajsjsksjhdhsjskskdhdhdh</p>"
